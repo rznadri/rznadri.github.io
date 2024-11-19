@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaReact, FaNodeJs, FaPython, FaDatabase } from 'react-icons/fa';
-import { SiTypescript, SiJavascript } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaAws} from 'react-icons/fa';
+import { SiTypescript, SiJavascript, SiJuce, SiCplusplusbuilder } from 'react-icons/si';
 
 const Skills: React.FC = () => {
   const skills = [
@@ -9,8 +9,9 @@ const Skills: React.FC = () => {
     { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-600' },
     { name: 'JavaScript', icon: SiJavascript, color: 'text-yellow-400' },
     { name: 'Node.js', icon: FaNodeJs, color: 'text-green-500' },
-    { name: 'Python', icon: FaPython, color: 'text-blue-500' },
-    { name: 'Databases', icon: FaDatabase, color: 'text-gray-600' },
+    { name: 'AWS', icon: FaAws, color: 'text-orange-500' },
+    { name: 'C++', icon: SiCplusplusbuilder, color: 'text-black-500' },
+    { name: 'JUCE Audio', icon: SiJuce, color: 'text-black-500' },
   ];
 
   return (

@@ -1,5 +1,6 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll } from 'framer-motion';
+import { Texts } from './texts';
 
 const Hero: React.FC = () => {
   return (
@@ -11,14 +12,15 @@ const Hero: React.FC = () => {
         className="text-center"
       >
         <h1 className="text-5xl md:text-7xl font-bold mb-4">
-          Hi, I'm <span className="text-blue-400">Your Name</span>
+          Hi, I'm <span className="text-blue-400">{Texts.myName}</span>
         </h1>
         <h2 className="text-2xl md:text-3xl text-gray-300 mb-8">
-          Full Stack Developer
+          Full Stack / Audio Developer 
         </h2>
         <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-8">
-          I build beautiful and functional web applications with modern technologies.
+          I build beautiful and functional web applications with modern audio technologies.
         </p>
+        <a href={`mailto:${Texts.email}`}>
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
@@ -26,6 +28,7 @@ const Hero: React.FC = () => {
         >
           Get in Touch
         </motion.button>
+        </a>
       </motion.div>
     </section>
   );

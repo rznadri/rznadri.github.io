@@ -4,10 +4,9 @@ import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
   const socialLinks = [
-    { name: 'Email', icon: FaEnvelope, link: 'mailto:your.email@example.com' },
-    { name: 'LinkedIn', icon: FaLinkedin, link: '#' },
-    { name: 'GitHub', icon: FaGithub, link: '#' },
-    { name: 'Twitter', icon: FaTwitter, link: '#' },
+    { name: 'Email', icon: FaEnvelope, link: 'mailto:rznadri@gmail.com' },
+    { name: 'LinkedIn', icon: FaLinkedin, link: 'https://www.linkedin.com/in/reza-nadri-139341b6/' },
+    { name: 'GitHub', icon: FaGithub, link: 'https://github.com/rznadri' },
   ];
 
   return (
@@ -42,7 +41,7 @@ const Contact: React.FC = () => {
             </div>
             <div className="mt-12">
               <motion.a
-                href="mailto:your.email@example.com"
+                href="mailto:rznadri@gmail.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-block bg-blue-500 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-600 transition-colors"
