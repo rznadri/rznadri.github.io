@@ -1,54 +1,80 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Texts } from './texts';
 
 const About: React.FC = () => {
   return (
-    <section className="py-20 bg-gray-100">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-20 relative overflow-hidden bg-gradient-to-b from-gray-900 via-teal-900/20 to-gray-900">
+      {/* Animated background elements */}
+      <div className="absolute inset-0">
+        {/* <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-gray-900/50 to-transparent"></div> */}
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-purple-500/10 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
+        {/* <div className="absolute bottom-0 right-0 w-full h-1/2 bg-gradient-to-t from-gray-900/50 to-transparent"></div> */}
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
+          className="text-center"
         >
-          <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <p className="text-lg text-gray-700">
-                I'm a passionate developer with a strong foundation in web development.
-                I love creating elegant solutions to complex problems and am constantly
-                learning new technologies to stay at the forefront of web development.
+          <h2 className="text-4xl font-bold mb-4">
+            <span className="gradient-text">About Me</span>
+          </h2>
+          <p className="text-gray-300 mb-12 max-w-2xl mx-auto">
+            Full Stack Developer with a passion for creating innovative web applications and audio software solutions.
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8">
+          <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="glass-effect p-6 rounded-xl hover-card border border-teal-500/20"
+            >
+              <h3 className="text-xl font-semibold text-gray-200 mb-4">AWS Engineer</h3>
+              <p className="text-gray-300">
+                Experienced in AWS Cloud Services, including Serverless Architecture, Infrastructure as Code, and Infrastructure Optimization. 
+                Passionate about automating development processes. Experienced in AWS Lambda, DynamoDB, SQS, SNS, and ECR, ECS, API Gateway, CDK, etc.
               </p>
-              <p className="text-lg text-gray-700">
-                With experience in both frontend and backend development, I bring a
-                comprehensive approach to building web applications that are not only
-                beautiful but also performant and scalable.
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="glass-effect p-6 rounded-xl hover-card border border-teal-500/20"
+            >
+              <h3 className="text-xl font-semibold text-gray-200 mb-4">Web Development</h3>
+              <p className="text-gray-300">
+                Experienced in building modern web applications using React, TypeScript, and Node.js.
+                Passionate about creating intuitive user interfaces and robust backend systems, with a strong background in AWS Serverless stack.
               </p>
-            </div>
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-semibold mb-4">Quick Facts</h3>
-              <ul className="space-y-3">
-                <li className="flex items-center">
-                  <span className="w-32 font-medium">Location:</span>
-                  <span>Your Location</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-32 font-medium">Experience:</span>
-                  <span>X Years</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-32 font-medium">Education:</span>
-                  <span>Your Degree</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-32 font-medium">Interests:</span>
-                  <span>Web Development, AI, etc.</span>
-                </li>
-              </ul>
-            </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="glass-effect p-6 rounded-xl hover-card border border-teal-500/20"
+            >
+              <h3 className="text-xl font-semibold text-gray-200 mb-4">Audio Development</h3>
+              <p className="text-gray-300">
+                Specialized in developing audio software solutions using C++ and the JUCE framework.
+                Creating innovative tools for music production and sound processing.
+              </p>
+            </motion.div>
           </div>
         </motion.div>
       </div>
+
+      {/* Smooth transition to next section */}
+      
     </section>
   );
 };
