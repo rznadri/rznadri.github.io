@@ -13,7 +13,7 @@ function App() {
   return (
     <AnimatePresence>
       /* min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white relative overflow-hidden */
-      <div className="min-h-screen bg-gradient-to-br from-gray-500 via-gray-800 to-gray-900 text-white relative overflow-hidden">
+      <div className="min-h-screen bg-gradient-to-br from-purple-950 from-5% via-gray-800 via-30% to-cyan-900 to-90% text-white relative overflow-hidden">
         {/* <BackgroundMusic /> */}
         {/* Background decoration */}
         <div className="absolute inset-0 overflow-hidden">
