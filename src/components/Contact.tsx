@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
             </motion.a>
 
             <motion.a
-              href="https://linkedin.com/in/rezanadri"
+              href="https://www.linkedin.com/in/reza-nadri-139341b6/"
               target="_blank"
               rel="noopener noreferrer"
               className="glass-effect p-6 rounded-xl hover-card border border-emerald-500/20 group"

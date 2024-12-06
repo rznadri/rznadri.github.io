@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
           Hi, I'm <span className="text-blue-400">{Texts.myName}</span>
         </h1>
         <h2 className="text-2xl md:text-2xl text-gray-300 mb-8">
-          Full Stack AWS Software Engineer and Audio Programmer
+          AWS DEVOPS/PLATFORM ENGINEER
         </h2>
         <a href={`mailto:${Texts.email}`}>
           <motion.button

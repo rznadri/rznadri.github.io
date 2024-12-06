@@ -5,10 +5,10 @@ import { SiTypescript, SiJuce, SiCplusplus } from 'react-icons/si';
 
 const Skills: React.FC = () => {
   const skills = [
-    { name: 'React', icon: FaReact, color: 'text-blue-400' },
+    { name: 'AWS', icon: FaAws, color: 'text-yellow-500' },
+    // { name: 'React', icon: FaReact, color: 'text-blue-400' },
     { name: 'TypeScript', icon: SiTypescript, color: 'text-blue-500' },
     { name: 'Node.js', icon: FaNodeJs, color: 'text-green-500' },
-    { name: 'AWS', icon: FaAws, color: 'text-yellow-500' },
     { name: 'C++', icon: SiCplusplus, color: 'text-blue-600' },
     { name: 'JUCE', icon: SiJuce, color: 'text-gray-500' },
   ];

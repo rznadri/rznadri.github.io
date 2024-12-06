@@ -8,6 +8,7 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import BackgroundMusic from './components/BackgroundMusic';
 import Experience from './components/Experience';
+import Music from './components/Music';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Experience />
           <Skills />
           <Projects />
+          {/* <Music /> */}
           <Contact />
         </motion.div>
       </div>
